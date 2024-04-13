@@ -20,7 +20,7 @@ CareerPulse is a comprehensive job search platform designed to connect job seeke
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/CareerPulse.git
+   git clone https://github.com/avinashyadav16/CareerPulse_Flask_App.git
    ```
 
 2. Navigate to the project directory:
@@ -33,9 +33,9 @@ CareerPulse is a comprehensive job search platform designed to connect job seeke
 
 1. Set the Flask environment variable:
 
-```bash
-export FLASK_APP=app.py
-```
+   ```bash
+   export FLASK_APP=app.py
+   ```
 
 2. Run the application:
 
