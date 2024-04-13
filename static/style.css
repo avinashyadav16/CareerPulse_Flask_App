@@ -1,0 +1,159 @@
+h1#tag {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+    font-family: cursive;
+    margin-top: 0px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    color: #333;
+    font-size: 28px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+#banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 95%;
+    height: 350px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.aboutContainer {
+    max-width: 720px;
+    margin: 0 auto 0 auto;
+}
+
+
+/* POSITION CONTAINER */
+.positionContainer {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.featuredJobs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+hr {
+    border-bottom: 1px solid #ccc;
+    border-style: none;
+    border-top-style: dotted;
+    width: 10%;
+    border-width: 6px;
+    border-color: grey;
+}
+
+
+.jobItem {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(226, 226, 226);
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.jobDetails {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.applyBtn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 20px auto 40px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.applyBtn:hover {
+    background-color: #0056b3;
+}
+
+
+.btn-contact {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-contact:hover {
+    background-color: #0056b3;
+}
+
+
+/* FOOTER SECTION */
+.footer {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    background-color: #f5f5f5;
+    padding: 0px 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 280px;
+    box-sizing: border-box;
+}
+
+.newsletter label {
+    margin-left: 5px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.subscribe-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background-color: #0056b3;
+}

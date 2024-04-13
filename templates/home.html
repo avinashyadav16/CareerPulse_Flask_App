@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerPulse</title>
+    <link rel="stylesheet" href="../static/style.css" />
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename='favicon.png') }}"
+      type="image/png"
+    />
+  </head>
+
+  <body>
+    <h1 id="tag">CareerPulse</h1>
+    <img id="banner" src="../static/banner.jpg" />
+
+    <div class="aboutContainer">
+      <h2>About Us</h2>
+
+      <p>
+        Welcome to <strong style="color: #007bff">CareerPulse</strong>, your
+        trusted partner in navigating the world of
+        <em style="color: #007bff">employment opportunities</em>. Our platform
+        is designed to provide you with
+        <strong>curated job openings</strong> tailored to your skills,
+        interests, and career aspirations. Whether you're a fresh graduate
+        taking your first step into the professional world or an experienced
+        professional seeking new challenges, CareerPulse offers a comprehensive
+        range of job listings to help you find the
+        <span style="color: #007bff">perfect fit</span>.
+      </p>
+      <p>
+        With CareerPulse, you can explore a wide array of job sectors, connect
+        with <span style="color: #007bff">top employers</span>, and stay updated
+        with the latest industry trends. Our user-friendly interface ensures a
+        seamless job search experience, allowing you to focus on what matters
+        most - <strong style="color: #007bff">landing your dream job</strong>.
+      </p>
+
+      <p>
+        Join us today and let
+        <strong style="color: #007bff">CareerPulse</strong> guide you towards a
+        brighter and more fulfilling career path!
+      </p>
+    </div>
+
+    <div class="positionContainer">
+      <h2>Open Positions</h2>
+
+      <div class="featuredJobs">
+        {% for job in jobs %}
+        <div class="jobItem">
+          <div class="jobDetails">
+            <h4>{{job['title']}}</h4>
+            <div><strong>{{job['location']}}</strong></div>
+            <div>{{job['salary']}}</div>
+          </div>
+          <button type="button" class="applyBtn">Apply</button>
+        </div>
+        <hr />
+        {% endfor %}
+      </div>
+
+      <button class="btn-contact">Contact Us</button>
+    </div>
+
+    <div class="footer">
+      <div class="footer-content">
+        <p>&copy; 2024 CareerPulse. All Rights Reserved.</p>
+        <div class="newsletter">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="footer-input"
+          />
+          <label for="newsletter">
+            <input type="checkbox" name="newsletter" id="newsletter" checked />
+            <span>Subscribe to Our Weekly Newsletter</span>
+          </label>
+          <button type="submit" class="subscribe-btn">Subscribe</button>
+        </div>
+        <address class="address">
+          <p>123 Job Street, BlueCity, Wonderland</p>
+          <p>+1 234 567 890</p>
+        </address>
+      </div>
+    </div>
+  </body>
+</html>
